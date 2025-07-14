@@ -2,102 +2,242 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div>
+      <Image
+        src="/images/CARLO___KAREL_September_9__2023__5_.png"
+        alt="Next.js Logo"
+        layout="responsive"
+        width={1920} // default full width for desktop
+        height={1080}
+        priority
+      />
+      <div className="mx-8 sm:mx-24">
+        <div className="flex flex-col justify-center items-center py-4">
+          <p className="text-2xl">671 DAYS</p>
+          <p>since we tied the knot!</p>
+          <a className="bg-[#252b2e] text-white px-4 py-2 mt-2">RSVP here!</a>
+        </div>
+
+        <div className="flex flex-col justify-center items-center text-sm sm:text-base my-10">
+          <div className="h-[1px] w-[90px] bg-[#afc3d6]"></div>
+          <em className="flex flex-col justify-center items-center py-4 w-[70%] sm:w-[640px]">
+            <p className="text-center">Welcome to our wedding website!</p>
+            <br />
+            <p className="text-center">
+              Feel free to look around to learn more about our story and details
+              on our big day, including directions to our venue, hotel and
+              travel info.
+            </p>
+            <p className="text-center">
+              We can’t wait to celebrate with you all soon!
+            </p>
+            <br />
+            <p className="text-center">Love, Karel and Carlo</p>
+          </em>
+          <div className="h-[1px] w-[90px] bg-[#afc3d6]"></div>
+        </div>
+
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/images/CarloKarelProposal_TonyLeFIlms_-28.jpg"
+          alt="Wedding Image"
+          layout="responsive"
+          width={1920} // default full width for desktop
+          height={1080}
+          className="shadow-lg"
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <section className="my-10">
+          <Image
+            src="/images/1.png"
+            alt="title the prposal"
+            layout="responsive"
+            width={1920} // default full width for desktop
+            height={1080}
+            priority
+          />
+
+          <p className="text-center text-sm sm:text-xl my-4">
+            {`The engagement proposal was a 4-week scheme with our closest friends
+            and family playing important roles. If you know Karel, she's not
+            easily surprised. Everything had to be so precise and a million
+            things could have made the whole plan go sideways, but thankfully it
+            all went according to plan!`}
+          </p>
+          <p className="text-center text-sm sm:text-xl my-4">
+            {`Anyways, Karel thought that we were attending a birthday dinner for
+            one of our friends that night. On the way to dinner, we planned to
+            meet up with her cousin to return something he "forgot" at a family
+            party, and he just happened to be walking his dog at a park nearby.
+            She didn't know that at the park, one of her best friends created a
+            beautiful picnic setup while my legit photographer cousin was a
+            ninja hiding in the bushes ready for action shots. Before that her
+            youngest sister stayed with us so that they could have a "sister
+            day" to get their nails done and before that her other sister helped
+            distract Karel so I could ask for her parents' blessing and
+            permission.`}
+          </p>
+          <p className="text-center text-sm sm:text-xl my-4">
+            {`Long story short, dominoes had to fall exactly in place to make it
+            all happen and by December 22, 2022 we were engaged. Big thanks to
+            the friends and family who helped successfully pull off this ruse.
+            :)`}
+          </p>
+
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-12 lg:gap-16 mt-24">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/CarloKarelProposal_TonyLeFIlms_-22.jpg"
+              alt="proposal image"
+              layout="responsive"
+              width={640}
+              height={480}
+              className="shadow-lg"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+            <Image
+              src="/images/CarloKarelProposal_TonyLeFIlms_-9.jpg"
+              alt="proposal image"
+              layout="responsive"
+              width={640}
+              height={480}
+              className="shadow-lg"
+              priority
+            />
+            <Image
+              src="/images/CarloKarelProposal_TonyLeFIlms_-48.jpg"
+              alt="proposal image"
+              layout="responsive"
+              width={640}
+              height={480}
+              className="shadow-lg"
+              priority
+            />
+          </div>
+        </section>
+
+        <section className="my-10">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/images/2.png"
+            alt="title the prposal"
+            layout="responsive"
+            width={1920} // default full width for desktop
+            height={1080}
+            priority
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-24 pt-12">
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">HOW DID YOU MEET?</p>
+              <p className="text-center">
+                K: We actually had no idea exactly where and when we met until
+                very recently when a friend asked us this question, ha. With
+                some Facebook sleuthing, we finally learned that we met sometime
+                in 2011 at a UCLA event with some friends. We didn't start
+                dating until over a year later!
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">What was your first date?</p>
+              <p className="text-center">
+                C: Funny enough we consider our first date as going to church
+                together. It was Ash Wednesday and I just decided to text her to
+                see if she wanted to go with me to the University Catholic
+                Church. She said yes and then I smoothly asked if she wanted to
+                get dinner afterwards. We got some of the worst tofu nuggets
+                I've ever tasted in my life. But at least my romantic charm and
+                amazing sense of humor made up for it. The rest is history...
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                What's the first movie that you watched together?
+              </p>
+              <p className="text-center">
+                K: Our friend Erica and I were hanging out at her dorm room one
+                night when Carlo somehow invited himself to watch the Thai
+                version of Shutter with us. If you know Carlo, he hates scary
+                movies, so there was definitely an ulterior motive there lol.
+                Erica is now fittingly our Maid of Honor for unknowingly having
+                to put up with being our third wheel (the first of many) that
+                night ;)
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                What's the best meal you have eaten together?
+              </p>
+              <p className="text-center">
+                C: I don't know if this is the "best foodwise" but definitely
+                one of the "best memories at a really good restaurant." We ate
+                at Next Restaurant, a Michelin restaurant in Chicago by Grant
+                Achatz. We had no idea how many courses the meal was that Karel
+                ate every course until she got too full. It was about course 7
+                and I swear we were expecting dessert, yet course 8 was straight
+                up steaks! Karel had 1-bite and her stomach said no more... I
+                ended up eating 2 additional courses but for the both of us,
+                including the 2 steaks.. lol
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                What's the most memorable trip you've taken together?
+              </p>
+              <p className="text-center">
+                C: She would probably say our Hawaii trip back in 2019 because
+                that's when she forced me to go skydiving knowing I have had a
+                huge fear of jumping out of a plane. I happened to be the very
+                last person to board the tiny plane and there were no seats so
+                they had me sit on the edge of the plane door with my legs
+                hanging out as the plane took off! Then of course I was the
+                first person to jump and I was completely terrified... She loved
+                it.
+                <br /> K: I loved it.
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                What's the most spontaneous thing you've done together?
+              </p>
+              <p className="text-center">
+                K: Carlo and I spent a lot of time going back and forth between
+                the East Coast and LA when he was living in Boston. While being
+                long distance was tough, we made the most of it by traveling to
+                new places during that time! My favorite would be the summer we
+                went around Spain and spontaneously extended our stay at Ibiza.
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                What are you on the same page about?
+              </p>
+              <p className="text-center">
+                C: Living life to its fullest, moment by moment. As you can tell
+                it took 10 years until we were engaged! But it's not because we
+                were in doubt about each other. We've always lived our life
+                together and at our pace. We've always been ready but never in a
+                rush.
+              </p>
+            </div>
+            <div>
+              <p className="text-center text-2xl uppercase pb-4">
+                Where are you going for your honeymoon?
+              </p>
+              <p className="text-center">
+                C: Whatever opportunity presents itself at the right moment. ;)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Image
+          src="/images/image-1673996360.jpg"
+          alt="Wedding Image"
+          layout="responsive"
+          width={1920} // default full width for desktop
+          height={1080}
+          className="shadow-lg my-16"
+          priority
+        />
+      </div>
     </div>
   );
 }
